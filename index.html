@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>FizzBuzz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="FizzBuzz.js" defer></script>
+        <style>
+            td {
+                width: 55px;
+                text-align: center;
+                border: 1px solid black;
+            }
+            table, th, td {
+                background-color: lightGray;
+                border-collapse: collapse;
+            }
+            .large-font {
+                font-size: 1.2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center">FizzBuzz 1-100</h1>
+        <h2>FizzBuzz output</h2>
+        <table class = "large-font" id="fizzBuzz">        
+        </table>
+        <br />
+        <hr />
+        <h2>Test results</h2>
+        <div class = "large-font" id="testFizzBuzz">        
+        </div>
+        <br />
+        <hr />
+        <h2>Solution</h2>
+        <pre class = "large-font">
+In my solution I create an array, iterate over all numbers from 1 to 100,
+fill the array depend on number.
+There can be different situations: 
+- 3 and 5 present in a number: 35 and 53. Push FizzBuzz or BuzzFizz.
+- 3 or 5 present in a number. Push Fizz or Buzz 
+- other digits in a number. Push the number.
+        
+After that, just use a helper function to print all these values
+and place them on a table for better organization.
+        
+In my test function, I compare an array returned by fizzBuzz() function
+with the predefined one. In case they are equals the test passes otherwise
+return the reason of the failure.
+
+        </pre>
+        <div style = "background-color: lightGray">
+            <code class = "large-font" style="white-space: pre-wrap" id="code">
+            </code>
+        </div>
+        <script src="FizzBuzz.js"></script>
+    </body>
+</html>
